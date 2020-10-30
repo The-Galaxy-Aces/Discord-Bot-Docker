@@ -11,7 +11,6 @@ RUN apk add $ALPINE_REQUIRED_PKGS
 # Install python and upgrade it
 RUN ln -sf python3 /usr/bin/python
 RUN python -m ensurepip
-RUN pip3 install --upgrade pip
 
 # Clone the TGA Discord Bot and install requirements
 RUN git clone https://github.com/Travisivart/TGA-Bot.git
