@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM alpine:3.12.1
 
 ENV ALPINE_BUILD_PKGS="--virtual .voice-build-deps --no-cache build-base libffi-dev libsodium-dev musl-dev gcc git python3-dev"
 ENV ALPINE_REQUIRED_PKGS="--no-cache libffi libsodium opus-dev ffmpeg python3 tmux"
